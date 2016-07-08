@@ -54,22 +54,5 @@ end
 
 
 def add_s(words)
-
 words.each_with_index.collect {|element, index| index != 1 ? element + "s" : element}
-#   if index != 1
-#     element + "s"
-#   else
-#     element
-#   end
-# end
 end
-
-
-# words.each_with_index.collect do |add|
-#   if add != words[1]
-#     add + "s"
-#   else
-#     new_arr = []
-#     new_arr<<add
-#   end
-# end.flatten
