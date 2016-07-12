@@ -8,9 +8,14 @@ end
 
 # Sort from lowest to highest (ascending).
 def sort_array_char_count (array)
-  array.sort do |x,y|
-    x.length <=> y.length    
+  # array.sort do |x,y|
+  #   x.length <=> y.length    
+  # end
+
+  array.sort_by do |element|
+    element.length
   end
+  
 end
 
 def swap_elements(array)
